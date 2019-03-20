@@ -1,0 +1,16 @@
+[package]
+name = "mandelbrot"
+version = "0.1.0"
+authors = ["Eduardo Cunha <hey@drgmr.com>"]
+edition = "2018"
+
+[profile.release]
+lto = true
+
+[profile.bench]
+lto = true
+
+[dependencies]
+num = "0.2"
+image = "0.21"
+crossbeam = "0.7"
